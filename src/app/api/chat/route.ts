@@ -3,7 +3,7 @@ import { openai } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 
 // Optionally, you can allow a longer response time (in seconds)
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
